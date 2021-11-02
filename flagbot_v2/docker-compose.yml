@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  flagbot_v2:
+    build: ./docker
+    volumes:
+      - .:/app
+    working_dir: /app

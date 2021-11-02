@@ -15,7 +15,6 @@ async def on_ready():
 @app.event
 async def on_command_error(ctx, error):
     embed = Embed(title="Error!", color=0xff0000)
-    print(error)
     if isinstance(error, commands.CommandNotFound):
         embed.add_field(name="Command Not Found", value="올바른 명령어를 입력해주세요 ㅜ^ㅜ")
     await ctx.send(embed=embed)
