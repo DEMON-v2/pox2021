@@ -6,8 +6,8 @@ from utils import token_load
 app = commands.Bot(command_prefix='!')
 app.remove_command('help')
 
-flag1 = "POX{th3s_is_d1sc0rd"
-flag2 = "_cl3ent_b0t_f@ag#}"
+flag1 = "[REDACTED]"
+flag2 = "[REDACTED]"
 
 @app.event
 async def on_ready():
