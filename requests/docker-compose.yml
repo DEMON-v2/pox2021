@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  requests-web:
+    build: ./images/
+    container_name: requests-web
+    volumes:
+      - "./src:/var/www/html"
+    ports:
+      - 3192:80
+    networks:
+      requests-network:
+        ipv4_address: 172.2.0.3
+    restart: always
+
+networks:
+  requests-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.2.0.0/24

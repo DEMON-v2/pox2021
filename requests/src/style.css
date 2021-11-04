@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #262936;
+  margin: 0;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .content {
+  background-color: #292C3A;
+  padding: 30px 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+}
+.wrapper .content button {
+  padding: 15px;
+  width: 150px;
+  border: unset;
+  background: #262936;
+  border-radius: 50px;
+  color: #333;
+  cursor: pointer;
+}
+.wrapper .content button:focus {
+  outline: none;
+}
+.wrapper .content header {
+  text-align: center;
+}
+.wrapper .content header h5 {
+  color: #fff;
+  margin-top: 0;
+  font-size: 120%;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper .content .alarm-info {
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+.wrapper .content .alarm-info small {
+  color: #ffffff;
+  font-size: 11px;
+}
+
+.wrapper .content .form-url {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .content .form-url .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 310px;
+}
+
+.wrapper .content .form-url .input-group input {
+  padding: 15px;
+  font-size: 13px;
+  border: 1px solid #262936;
+  background-color: #262936;
+  color: #fff;
+  border-radius: 50px;
+  tranistion: background 0.5s;
+  -webkit-tranistion: background 0.5s;
+}
+
+.wrapper .content .form-url .input-group input:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.wrapper .content .form-url .input-group input:hover {
+  outline: none;
+  background-color: #fff;
+  color: #000000;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+
+.wrapper .content .form-url .input-group label {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 3px;
+  margin-left: 16px;
+}
+.wrapper .content .form-url .input-group button {
+  background-color: #0061a8;
+  border: unset;
+  color: #fff;
+  align-self: center;
+  margin-top: 15px;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+
+.wrapper .content .form-url .input-group button:hover {
+  background-color: #3d84b8;
+}
+.wrapper .content footer {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.wrapper .content .group {
+  text-align: center;
+}
+
+.wrapper .content .group h5 {
+  color: #fff;
+  margin-top: 0;
+  font-size: 110%;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper .content .group namecolor {
+  color: #a9f1df;
+  text-align: center;
+}
+
+
+.wrapper .content .group h6 {
+  color: #fff;
+  font-size: 90%;
+  text-align: center;
+}
+
+.wrapper .content .group color {
+  color: #ffe5e2;
+  text-align: center;
+}
+
+.wrapper .content .group strong {
+  color: #b6c9f0;
+  text-align: center;
+}
+
+.wrapper .content .group p {
+  color: #fff;
+  margin-top: 0;
+  font-size: 100%;
+  text-align: center;
+}
+
+.wrapper .content .group a {
+  color: #fff;
+  margin-top: 0;
+  font-size: 100%;
+  text-align: center;
+}
+
+.wrapper .content .group small {
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+}
+
+.wrapper .content .group button {
+  background-color: #ff8474;
+  border: unset;
+  color: #fff;
+  align-self: center;
+  margin-top: 15px;
+  transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+
+.wrapper .content small {
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper .content {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 10px;
+  }
+}
