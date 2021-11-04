@@ -6,8 +6,8 @@ from utils import token_load
 app = commands.Bot(command_prefix='!')
 app.remove_command('help')
 
-flag1 = "[REDACTED]"
-flag2 = "[REDACTED]"
+flag_1 = "[REDACTED]"
+flag_2 = "[REDACTED]"
 
 @app.event
 async def on_ready():
@@ -29,7 +29,7 @@ async def help(ctx):
 
 @app.command()
 async def flag1(ctx):
-    e = Embed(title="Give me the Flag #1", description=flag1, color=0xCEFBC9)
+    e = Embed(title="Give me the Flag #1", description=flag_1, color=0xCEFBC9)
     await ctx.author.send(embed=e)
 
 @app.command()
@@ -37,7 +37,7 @@ async def flag2(ctx):
     try:
         organizer = get(ctx.guild.roles, name="Organizer")
         if organizer in ctx.author.roles:
-            e = Embed(title="Give me the Flag #2", description=flag2, color=0xCEFBC9)
+            e = Embed(title="Give me the Flag #2", description=flag_2, color=0xCEFBC9)
             await ctx.author.send(embed=e)
         else:
             e = Embed(title="UnAuthorized", description="UnAuthorized", color=0xff0000)
