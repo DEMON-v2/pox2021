@@ -9,3 +9,9 @@ def token_load():
             return token['token']
     except:
         print('Token Parsing Error!')
+
+def channel_check(channel_id):
+    if channel_id == 907406222603464764:
+        return True
+    else:
+        return False
