@@ -1,7 +1,7 @@
 from discord.ext import commands
 from discord import Embed, Game, Status
 from discord.utils import get
-from utils import token_load, channel_check
+from utils import token_load
 
 app = commands.Bot(command_prefix='!')
 app.remove_command('help')
@@ -53,6 +53,7 @@ async def flag2(ctx):
             e = Embed(title="POX 2021", url="https://ctf.powerofxx.org", description="안녕하세요! POX 2021 도우미 입니다.", color=0x1d87d7)
             e.add_field(name="플래그 주세요 #2", value=flag_2, inline=False)
             e.set_footer(text="CopyRight Demon TEAM & SISS")
+            await ctx.author.send(embed=e)
         else:
             e = Embed(title="POX 2021", url="https://ctf.powerofxx.org", description="안녕하세요! POX 2021 도우미 입니다.", color=0xff0000)
             e.add_field(name="오류!", value="인증되지 않은 사용자 입니다.", inline=False)
